@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: rgb(127, 197, 255);
+        }
+
+        h1 {
+            background-color: rgb(39, 39, 83);
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            border: solid rgb(35, 51, 142) 25px;
+            background-color: rgb(103, 165, 235);
+            padding: 20px;
+            outline: solid rgb(94, 111, 212) 10px;
+        }
+
+        #done {
+            margin: 0;
+            position: absolute;
+            left: 60%;
+            color: white;
+            background-color: rgb(13, 13, 44);
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: rgb(202, 226, 247);
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            background-color: rgb(104, 104, 104);
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+        <title>Student Form</title>
+    </head>
+    <body>
+    <h1>Student Form</h1>
+    <div style="text-align: center; position: relative;">
+        <a href="home.html" style="display: inline-block; width: 20%; border: solid black; text-align: center;">Home</a>
+    </div>
+    <br>
+    <form action="studentInfo.jsp" method="post">
+        <label for="std_name">Your name:</label>
+        <br>
+        <input id="std_name" name="std_name" type="text" autofocus minlength="3" maxlength="25" required>
+        <br>
+        <label for="father_name">Your father's name:</label>
+        <br>
+        <input id="father_name" name="father_name" type="text" minlength="3" maxlength="25">
+        <br>
+        <label for="mother_name">Your mother's name:</label>
+        <br>
+        <input id="mother_name" name="mother_name" type="text" minlength="3" maxlength="25">
+        <br>
+        <label>Your address:</label>
+        <br>
+        <input name="address" type="text" list="mylist">
+        <datalist id="mylist">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Naogaon">Naogaon</option>
+            <option value="Bogra">Bogra</option>
+            <option value="Joypurhat">Joypurhat</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Tangail">Tangail</option>
+            <option value="Sylet">Sylet</option>
+        </datalist>
+        <br>
+        <label for="mobile">Your contact number:<br>+880</label>
+        <input id="mobile" name="number" type="number" minlength="10" maxlength="10">
+        <br>
+        <label for="mail">Your email address:</label>
+        <br>
+        <input id="mail" name="mail" type="email" minlength="7" maxlength="25" required>
+        <br>
+        <label>Enter your gender:</label>
+        <br>
+        <input id="male" value="Male" name="gender" type="radio">Male
+        <input id="female" value="Female" name="gender" type="radio">Female
+        <br>
+        <label>Enter your birth date:</label>
+        <br>
+        <select name="date" id="date" class="birth_date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="month" id="month" class="birth_date">
+            <option value="January">jan</option>
+            <option value="February">feb</option>
+            <option value="March">mar</option>
+            <option value="April">apr</option>
+            <option value="May">may</option>
+            <option value="June">jun</option>
+            <option value="July">jul</option>
+            <option value="August">aug</option>
+            <option value="September">sep</option>
+            <option value="October">oct</option>
+            <option value="November">nov</option>
+            <option value="December">dec</option>
+        </select>
+        <select name="year" id="year" class="birth_date">
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+        </select>
+        <br>
+        <label for="img">Enter your passport size photo:</label>
+        <br>
+        <input id="img" name="img" type="file" required>
+        <br>
+        Comment section:
+        <br>
+        <textarea name="ta" id="ta" cols="30" rows="10" placeholder="Please enter your comment.."></textarea>
+        <br>
+        <button type="submit" id="done">Ok</button>
+        <br>
+    </form>
+    </body>
+</html>
