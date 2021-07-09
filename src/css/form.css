@@ -1,0 +1,44 @@
+        body {
+            background-color: rgb(127, 197, 255);
+        }
+
+        h1 {
+            background-color: rgb(39, 39, 83);
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            border: solid rgb(35, 51, 142) 25px;
+            background-color: rgb(103, 165, 235);
+            padding: 20px;
+            outline: solid rgb(94, 111, 212) 10px;
+        }
+
+        #done {
+            margin: 0;
+            position: absolute;
+            left: 60%;
+            color: white;
+            background-color: rgb(13, 13, 44);
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: rgb(202, 226, 247);
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            background-color: rgb(104, 104, 104);
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgb(255, 255, 255);
+        }
